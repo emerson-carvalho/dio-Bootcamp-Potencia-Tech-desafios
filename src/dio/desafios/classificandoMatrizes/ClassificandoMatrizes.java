@@ -1,4 +1,4 @@
-package dio.desafio.classificandoMatrizes;
+package dio.desafios.classificandoMatrizes;
 
 import java.util.ArrayList;
 import java.util.List;

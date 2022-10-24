@@ -1,4 +1,4 @@
-package dio.desafio.quadradosPerfeitos;
+package dio.desafios.quadradosPerfeitos;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package dio.desafio.fatorialDesajeitado;
+package dio.desafios.fatorialDesajeitado;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package dio.desafio.checagemDePalindromo;
+package dio.desafios.checagemDePalindromo;
 
 import java.util.Scanner;
 

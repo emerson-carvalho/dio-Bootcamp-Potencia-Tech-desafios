@@ -1,4 +1,4 @@
-package dio.desafio.validacaoParenteses;
+package dio.desafios.validacaoParenteses;
 
 import java.util.Scanner;
 
@@ -18,13 +18,9 @@ public class ValidacaoParenteses {
             return true;
         }
 
-        switch (s) {
-            case "()":
-            case "[]":
-            case "{}":
-                return true;
-            default:
-                return false;
-        }
+        return switch (s) {
+            case "()", "[]", "{}" -> true;
+            default -> false;
+        };
     }
 }
