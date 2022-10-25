@@ -20,19 +20,19 @@ public class QuadradosPerfeitos {
         int quantidade = 0;
         int total = n;
 
-        for (int num : quadradosPerfeitos) {
-            if (total % num == 0 && num > 1) {
-                quantidade = total / num;
+        for (int i = quadradosPerfeitos.size() - 1; i >= 0; i--) {
+            int num = quadradosPerfeitos.get(i);
+
+            if (num <= total && total > 0) {
+                total -= num;
+                if (quadradosPerfeitos.contains(total) || total == 0) quantidade++;
             }
         }
 
-        if (quantidade == 0) {
-            for (int i = quadradosPerfeitos.size() - 1; i >= 0; i--) {
-                int num = quadradosPerfeitos.get(i);
-
-                if (num <= total && total > 0) {
-                    total -= num;
-                    if (quadradosPerfeitos.contains(total) || total == 0) quantidade++;
+        if (total > 0) {
+            for (int num : quadradosPerfeitos) {
+                if (n % num == 0 && num > 1) {
+                    quantidade = n / num;
                 }
             }
         }
